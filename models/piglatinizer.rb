@@ -7,6 +7,7 @@ class PigLatinizer
 
   def piglatinize(text)
     words = text.split(" ")
+    binding.pry
     words.each do |word|
       word = word.to_s
       letters = self.break(word)
