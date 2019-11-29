@@ -21,13 +21,10 @@ class PigLatinizer
       start = []
       letters = words.split("")
       letters.each do |letter|
-        binding.pry
         break if letter =~ /[aeiouAEIOU]/
           count += 1
         end
-        binding.pry
-        start << letters.shift(count)
-        binding.pry
+      start << letters.shift(count)
       letters = letters + start
       letters
     end
