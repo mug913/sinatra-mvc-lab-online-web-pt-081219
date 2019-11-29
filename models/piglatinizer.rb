@@ -26,7 +26,7 @@ class PigLatinizer
         end
         piglatinized << "#{piglatinizedword}"
       end
-      piglatinized.map{|w| output = output + w + " "}
+      piglatinized.map{|w| output = w + " "}
       output.chomp
       output
   end
