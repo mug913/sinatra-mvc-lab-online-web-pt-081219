@@ -27,7 +27,7 @@ binding.pry
         end
       start << letters.shift(count)
       binding.pry
-      letters << start
+      letters += start
       letters
     end
 
