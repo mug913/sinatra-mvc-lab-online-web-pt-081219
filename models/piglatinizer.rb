@@ -2,11 +2,10 @@ class PigLatinizer
 
   attr_accessor :words
 
-  def initialize(text)
-    return piglatinize(text)
+  def initialize
   end
 
-  def piglatinize(text)
+  def self.piglatinize(text)
     output = ""
     piglatinized = []
     words = text.split(" ")
@@ -35,7 +34,7 @@ class PigLatinizer
       output
   end
 
-  def break(words)
+  def self.break(words)
       count = 0
       start = []
       letters = words.split("")
