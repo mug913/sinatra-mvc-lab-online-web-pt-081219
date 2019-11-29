@@ -26,7 +26,9 @@ class PigLatinizer
         end
         piglatinized << piglatinizedword
       end
+      binding.pry
       piglatinized.map{|w| w }.join(' ')
+      binding.pry
       piglatinized.chomp
       piglatinized
   end
