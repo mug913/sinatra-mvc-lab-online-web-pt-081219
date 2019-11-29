@@ -27,8 +27,8 @@ class PigLatinizer
         piglatinized << piglatinizedword
       end
       piglatinized.map{|w| w }.join(' ')
-      output.chomp
-      output
+      piglatinized.chomp
+      piglatinized
   end
 
   def break(words)
