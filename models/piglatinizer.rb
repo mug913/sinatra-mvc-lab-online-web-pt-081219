@@ -31,7 +31,7 @@ class PigLatinizer
         output += "#{w} "
       end
       output.chomp
-    output
+      output
   end
 
   def break(words)
