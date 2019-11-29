@@ -16,7 +16,7 @@ class PigLatinizer
     piglatinized
   end
 
-  def self split(words)
+  def split(words)
       start = []
       letters = words.split("")
       letters.each do |letter|
