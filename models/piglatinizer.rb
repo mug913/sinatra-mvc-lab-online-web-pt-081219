@@ -30,7 +30,7 @@ class PigLatinizer
       piglatinized.each do |w|
         output += "#{w} "
       end
-      output.chomp
+      output.chomp(" ")
       output
   end
 
