@@ -21,10 +21,11 @@ class PigLatinizer
       letters = words.split("")
       letters.map do |letter|
         binding.pry
-        if letter !=~ /[aeiouAEIOU]/
-          start << letters.shift
-        else
+        if letter =~ /[aeiouAEIOU]/
           break
+
+        else
+          start << letters.shift
         end
         binding.pry
       end
