@@ -23,7 +23,7 @@ class PigLatinizer
           end
         end
         piglatinized += "#{piglatinizedword} "
-      end 
+      end
       piglatinized.chomp
       piglatinized
   end
