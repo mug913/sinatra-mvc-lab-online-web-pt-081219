@@ -13,6 +13,7 @@ class PigLatinizer
         piglatinized = letters.join("") + "ay"
       else
         piglatinized = letters.join("") + "way"
+      end
     else
       piglatinized = letters.join("") + "ay"
     end
