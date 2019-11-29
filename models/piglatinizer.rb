@@ -25,7 +25,7 @@ binding.pry
         break if letter =~ /[aeiouAEIOU]/
           count += 1
         end
-      start << letters.shift(count)
+      start = letters.shift(count)
       binding.pry
       letters += start
       letters
