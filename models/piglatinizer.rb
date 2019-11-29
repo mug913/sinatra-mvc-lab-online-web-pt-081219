@@ -6,6 +6,7 @@ class PigLatinizer
   end
 
   def piglatinize(text)
+    output = ""
     piglatinized = []
     words = text.split(" ")
     words.each do |word|
@@ -26,9 +27,9 @@ class PigLatinizer
         end
         piglatinized << piglatinizedword
       end
-      binding.pry
-      piglatinized.map{|w| w }.join(' ')
-      binding.pry
+      piglatinized.each do |w|
+        output += "#{w} "
+      end
       piglatinized.chomp
       piglatinized
   end
