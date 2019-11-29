@@ -3,7 +3,7 @@ class PigLatinizer
   attr_accessor :words
 
   def initialize(text)
-    piglatinize(text)
+    return piglatinize(text)
   end
 
   def piglatinize(text)
