@@ -24,7 +24,7 @@ class PigLatinizer
           end
         end
           binding.pry
-        piglatinized += "#{piglatinizedword} "
+        piglatinized << "#{piglatinizedword} "
       end
       piglatinized.chomp
       piglatinized
