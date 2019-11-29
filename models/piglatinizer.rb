@@ -26,7 +26,7 @@ class PigLatinizer
         end
         piglatinized << "#{piglatinizedword} "
       end
-      piglatinized = piglatinized.to_s
+      piglatinized = piglatinized.to_s.chomp
       piglatinized.chomp
       piglatinized
   end
