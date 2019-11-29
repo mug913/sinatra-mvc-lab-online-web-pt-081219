@@ -11,9 +11,9 @@ class PigLatinizer
       piglatinized = letters.join("") + "way"
     else
       if letters[-1] =~ /[hHsS]/
-        piglatinized = letters.join("") + "way"
-      else
         piglatinized = letters.join("") + "ay"
+      else
+        piglatinized = letters.join("") + "way"
       end
     end
     piglatinized
