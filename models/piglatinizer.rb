@@ -26,7 +26,8 @@ class PigLatinizer
           break
         end
       end
-      letters + start
+      letters = letters + start
+      letters
     end
 
 end
