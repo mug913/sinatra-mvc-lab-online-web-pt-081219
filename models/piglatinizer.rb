@@ -24,10 +24,11 @@ class PigLatinizer
             end
           end
         end
-        piglatinized << "#{piglatinizedword} "
+        piglatinized << "#{piglatinizedword}"
       end
-      piglatinized = piglatinized.to_s.chomp
-      piglatinized
+      piglatinized.map{|w| output = output + w + " "}
+      output.chomp
+      output
   end
 
   def break(words)
