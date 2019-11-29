@@ -10,7 +10,7 @@ class PigLatinizer
     if letters[-1] =~ /[aeiouAEIOU]/
       piglatinized = letters.join("") + "way"
     else
-      if letters[-1] =~ /[hHsSpPlL]/
+      if letters[-1] =~ /[hHsSpPlLtT]/
         piglatinized = letters.join("") + "ay"
       else
         piglatinized = letters.join("") + "way"
