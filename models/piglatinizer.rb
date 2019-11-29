@@ -17,8 +17,14 @@ class PigLatinizer
   end
 
   def self.split(words)
+      start = []
       letters = words.split("")
       letters.each do |letter|
-        if
+        if letter !=~ /[aeiouAEIOU]/
+          start << letters.shift
+        else
+          break
+        end
+      end
 
 end
