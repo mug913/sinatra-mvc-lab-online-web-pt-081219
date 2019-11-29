@@ -10,7 +10,6 @@ class PigLatinizer
     words.each do |word|
       word = word.to_s
       letters = self.break(word)
-        binding.pry
         if letters[-1] =~ /[aeiouAEIOU]/
           piglatinizedword = letters.join("") + "way"
         else
@@ -24,6 +23,7 @@ class PigLatinizer
             end
           end
         end
+          binding.pry
         piglatinized += "#{piglatinizedword} "
       end
       piglatinized.chomp
