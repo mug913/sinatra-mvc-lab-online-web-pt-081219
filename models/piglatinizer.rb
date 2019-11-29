@@ -6,6 +6,7 @@ class PigLatinizer
   end
 
   def piglatinize(text)
+
     letters = self.split(words)
     if letters[-1] =~ /[aeiouAEIOU]/
       piglatinized = letters.join("") + "way"
@@ -37,7 +38,7 @@ class PigLatinizer
     end
 
     def break(text)
-      words = text.split(" ")
+      text.split(" ")
     end
 
 
