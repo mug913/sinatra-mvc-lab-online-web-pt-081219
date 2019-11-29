@@ -9,13 +9,13 @@ class PigLatinizer
     letters = self.split(words)
   # binding.pry
     if letters[-1] =~ /[aeiouAEIOU]/
-      if letters [-2] =~ /[lL]/
+      piglatinized = letters.join("") + "way"
+    else
+      if letters[-2] =~ /[aeiouAEIOU]/
         piglatinized = letters.join("") + "way"
       else
-        piglatinized = letters.join("") + "way"
+        piglatinized = letters.join("") + "ay"
       end
-    else
-      piglatinized = letters.join("") + "ay"
     end
     piglatinized
   end
