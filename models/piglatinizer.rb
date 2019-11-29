@@ -34,7 +34,7 @@ class PigLatinizer
       output
   end
 
-  def self.break(words)
+  def break(words)
       count = 0
       start = []
       letters = words.split("")
