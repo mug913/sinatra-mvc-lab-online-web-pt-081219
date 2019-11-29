@@ -22,7 +22,7 @@ class PigLatinizer
       letters.each do |letter|
         binding.pry
         break if letter =~ /[aeiouAEIOU]/
-          start << letters.shift
+          start << letter
         end
         binding.pry
       letters = letters + start
