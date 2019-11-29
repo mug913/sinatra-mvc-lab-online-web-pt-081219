@@ -7,11 +7,11 @@ class PigLatinizer
 
   def piglatinize(words)
     letters = self.split(words)
-    first = letters.shift
-    if first =~ /[aeiouAEIOU]/
-      piglatinized = letters.join("") + first + "way"
+
+    if letters[0] =~ /[aeiouAEIOU]/
+      piglatinized = letters.join("") + "way"
     else
-      piglatinized = letters.join("") + first + "ay"
+      piglatinized = letters.join("") + "ay"
     end
     piglatinized
   end
