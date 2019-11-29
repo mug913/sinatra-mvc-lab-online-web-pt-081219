@@ -7,7 +7,7 @@ class PigLatinizer
 
   def piglatinize(words)
     letters = self.split(words)
-  #  binding.pry
+   binding.pry
     if letters[-1] =~ /[aeiouAEIOUlL]/ && letters[-2] !=~ /[aeiouAEIOU]/
       piglatinized = letters.join("") + "way"
     else
