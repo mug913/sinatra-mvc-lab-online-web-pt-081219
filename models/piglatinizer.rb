@@ -8,7 +8,7 @@ class PigLatinizer
   def piglatinize(text)
     words = text.split(" ")
     words.each do |word|
-      word.to_s
+      word = word.to_s
       letters = self.split(word)
         if letters[-1] =~ /[aeiouAEIOU]/
           piglatinizedword = letters.join("") + "way"
