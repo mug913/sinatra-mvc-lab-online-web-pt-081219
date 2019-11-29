@@ -19,13 +19,14 @@ class PigLatinizer
   def split(words)
       start = []
       letters = words.split("")
-      letters.map do |letter|
+      letters.each do |letter|
         binding.pry
         if letter =~ /[aeiouAEIOU]/
           break
-
         else
+          binding.pry
           start << letters.shift
+          binding.pry
         end
         binding.pry
       end
