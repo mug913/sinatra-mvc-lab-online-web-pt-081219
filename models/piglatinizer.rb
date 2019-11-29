@@ -6,22 +6,26 @@ class PigLatinizer
   end
 
   def piglatinize(text)
-
-    letters = self.split(words)
-    if letters[-1] =~ /[aeiouAEIOU]/
-      piglatinized = letters.join("") + "way"
-    else
-      if letters[-1] =~ /[hHsSpPlLtT]/ && letters[-2] !~ /[aeiAEI]/
-        piglatinized = letters.join("") + "ay"
-      else
-        if letters[-1] =~ /[rR]/ && letters[-2] =~ /[pP]/
-          piglatinized = letters.join("") + "ay"
+    words = text.split(" ")
+    words.each do |word|
+      letters = self.split(words)
+        if letters[-1] =~ /[aeiouAEIOU]/
+          piglatinizedword = letters.join("") + "way"
         else
-          piglatinized = letters.join("") + "way"
+          if letters[-1] =~ /[hHsSpPlLtT]/ && letters[-2] !~ /[aeiAEI]/
+            piglatinizedword = letters.join("") + "ay"
+          else
+            if letters[-1] =~ /[rR]/ && letters[-2] =~ /[pP]/
+              piglatinizedword = letters.join("") + "ay"
+            else
+              piglatinizedword = letters.join("") + "way"
+            end
+          end
         end
-      end
-    end
-    piglatinized
+        piglatinized += "#{piglatinizedword} "
+      end 
+      piglatinized.chomp
+      piglatinized
   end
 
   def split(words)
@@ -36,10 +40,4 @@ class PigLatinizer
       letters += start
       letters
     end
-
-    def break(text)
-      text.split(" ")
-    end
-
-
 end
